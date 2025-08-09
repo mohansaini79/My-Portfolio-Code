@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohan Saini — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons (optional) -->
+ </head>
+<body>
+
+  <nav class="nav">
+    <div class="logo">Mohan <span class="accent"> S</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" download class="btn-resume">Resume</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button id="mobileMenu" class="mobile-menu" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container hero-card">
+      <div class="hero-left">
+        <div class="profile-wrap">
+          <img src="../assets/profile.jpg" alt="Mohan Saini" class="profile-img" />
+          <div class="ring"></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <h1>Hi, I'm <span class="name">Mohan Saini</span></h1>
+        <h2 class="subtitle"><span id="typing"></span><span class="cursor">|</span></h2>
+        <p class="lead">I build modern, responsive web apps — frontend & Python(Django\Flask)+full-stack(MERN).on Check my projects below.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">See Projects</a>
+          <a href="resume.pdf" download class="btn ghost">Download CV</a>
+        </div>
+
+        <div class="social">
+          <a href="https://github.com/mohansaini79" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I am a B.Tech CSE student at Shobhit University building full-stack projects (MERN/Next) Python(Django\Flask). I focus on clean UI & usable apps for students.</p>
+          <ul class="about-list">
+            <li><strong>Degree:</strong> B.Tech CSE (5th sem)</li>
+            <li><strong>CGPA Goal:</strong> Improve to 7.5</li>
+            <li><strong>Location:</strong> India</li>
+            <li><strong>City: </strong>Saharanpur (U.P)</li>
+            
+          </ul>
+        </div>
+
+        <div class="about-details">
+          <h3>Timeline</h3>
+          <div class="timeline">
+           
+           <div class="tl-item"><time>2025</time><p>Working on Flask, Django & Student Management System Project</p></div>
+          <br>
+           <div class="tl-item"><time>2024</time><p>Built frontend projects & started MERN</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><h4>HTML</h4><div class="progress"><span data-width="95%"></span></div></div>
+        <div class="skill"><h4>CSS</h4><div class="progress"><span data-width="90%"></span></div></div>
+        <div class="skill"><h4>JavaScript</h4><div class="progress"><span data-width="85%"></span></div></div>
+        <div class="skill"><h4> Full-Stack (MERN)</h4><div class="progress"><span data-width="80%"></span></div></div>
+         </div>
+         <br>
+          <div class="skill"><h4>Python(Django\Flask)</h4><div class="progress"><span data-width="80%"></span></div></div>
+         </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <!-- 1 -->
+        <article class="project-card" tabindex="0"
+                 data-title="Flask_Auth_App"
+                 data-img="../assets/project-flask.jpg"
+                 data-desc="Flask_Auth_App — Secure Flask authentication app (login). Hosted on Render."
+                 data-live="https://flask-auth-app-ex9u.onrender.com/login">
+          <div class="project-thumb"><img src="../assets/project-flask.jpg" alt="Flask Auth"></div>
+          <div class="project-body">
+            <h3>Flask_Auth_App</h3>
+            <p>Real time Secure login system built with Flask (Render).</p>
+            <div class="project-footer">
+              <button class="open-modal btn small">Details</button>
+              <a href="https://flask-auth-app-ex9u.onrender.com/login" target="_blank">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="project-card" tabindex="0"
+                 data-title="my-sms-project"
+                 data-img="../assets/project-sms.jpg"
+                 data-desc="my-sms-project — Firebase web app hosted on Firebase."
+                 data-live="https://my-sug-project.web.app">
+          <div class="project-thumb"><img src="../assets/project-sms.jpg" alt="My SMS"></div>
+          <div class="project-body">
+            <h3>my-sms-project</h3>
+            <p>Firebase-based SMS web app.</p>
+            <div class="project-footer">
+              <button class="open-modal btn small">Details</button>
+              <a href="https://my-sug-project.web.app" target="_blank">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="project-card" tabindex="0"
+                 data-title="Image to PDF Converter"
+                 data-img="../assets/project-pdf.jpg"
+                 data-desc="Image to PDF Converter — quick tool to convert images into PDF (tiiny.site)."
+                 data-live="https://therainbowpdfconverter.tiiny.site/">
+          <div class="project-thumb"><img src="../assets/project-pdf.jpg" alt="Image to PDF"></div>
+          <div class="project-body">
+            <h3>Image to PDF Converter</h3>
+            <p>Convert images into PDF quickly.</p>
+            <div class="project-footer">
+              <button class="open-modal btn small">Details</button>
+              <a href="https://therainbowpdfconverter.tiiny.site/" target="_blank">Live</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Get in touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+         
+         
+          <p>Have an internship, collaboration or project idea? Send a message — I reply quickly.</p>
+         <br>
+          <ul class="contact-list">
+            <li><i class="fas fa-map-marker-alt"></i> Shobhit University, Gangoh</li>
+              <li><i class="fas fa-phone"></i> Phone : 7983302363</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:mohansaini@example.com">mohansaini8772532@gmail.com</a></li>
+         
+        </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+          <input type="text" id="subject" name="subject" placeholder="Subject (optional)" />
+          <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send Message</button>
+            <button type="button" class="btn ghost" id="clearBtn">Clear</button>
+          </div>
+          <p id="formMsg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mohan Saini — Built with ❤ • <a href="https://github.com/mohansaini79" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="projectModal" role="dialog" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-panel" role="document">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <img id="modalImage" src="" alt="">
+        <p id="modalDesc"></p>
+        <div class="modal-links">
+          <a id="modalLive" href="#" target="_blank" rel="noopener" class="btn ghost">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
